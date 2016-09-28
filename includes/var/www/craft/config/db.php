@@ -14,7 +14,9 @@ return array(
 
 	// The database server name or IP address. Usually this is 'localhost' or '127.0.0.1'.
 	'server' => getenv('CRAFT_DB_SERVER') ?: $url["host"],
-
+	
+	'port' => getenv('CRAFT_PORT') ?: '80',
+	
 	// The database username to connect with.
 	'user' =>  getenv('CRAFT_DB_USER') ?: $url["user"],
 
